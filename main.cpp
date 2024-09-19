@@ -15,87 +15,7 @@ int main() {
 
     int from;
     int to;
-    /*
-    std::string ciphertext = "qptqkkwlckhkmzpnkmupkcvkwzpicacgelmfwhzlzfnmfmcksh"
-                            "cmfgvnfmrzbtpgybokwilfqbgqujbppqgbrmjiumcgliilzbrg"
-                            "phqkwzhkbubwvvzlnmpmmbvigbqgvetsmlsuzxhagxkcbgrigj"
-                            "qewarvyxzbrrpexezjikcbbuigmwbbmqnwoeoipmixrzzdxawh"
-                            "gxkiuxyahkiykpbqqfascvvvpgcmmueehpsfmlkkpkcigbwkrd"
-                            "xqlehtvzvzyvqxriigirqbgtxfdbbmfmlkgzhnpleeikqvrpvl"
-                            "gultwytyuikoxeyqaxhczbaztbvojzizpizlerzkxgaphqslvb"
-                            "aigbrmnqmfjbufukptpmvwitkqygmquchffxqiawxnvzxganem"
-                            "tvjxrerxrzymfqqtgmlpqgebuxgudunlqptxofvxtmvlxnvmtt"
-                            "mfwvugxxpauxerjwbqiohbgelayanwszkmwjqaxezkivfmqmsz"
-                            "ymvmuznrotimgwalpoemlfmvlehcmmmqamixtmirbuxgudunlq"
-                            "ptxofvmfmbgpenirrwckibvvmcdryvudtxyzabrmnptriybgkr"
-                            "vwzwotvkkieiqazehfcmgagavuloayxexzkebbtmphytkmkkmn"
-                            "lyxvmgazlixofvmfmexwtflxrmpmmuebaczrlruimlnwalizym"
-                            "kcaahvojsfyvnzisvvmwwhaebvbhydbbhzymmfzrtxlfzwcknw"
-                            "iynmaydrnwkubaganitxfivfbbvssgcmczfxgaiqmwerwvgnjh"
-                            "vmftvulvwrprwmlwmkcvgipgpmkqiawpoemlzmgpikebacujxh"
-                            "kwqgclvyjkimgrigmeibmkqmnoiyuzhnxrkwodxxpabgezfzlr"
-                            "pvxzkjigbbuxmxtiiyjvemzzmlumhlivimocvgbzktwnlbrkqk"
-                            "ranpmfemqvmgazlixofvtllnvgkjavmvgksrkwttwvwhownxpm"
-                            "amxnimtravyaktigydbbhzymmfzrtxynmocebgmlnmvyvgpibv"
-                            "thqbvfemzvxkgfnvviqlceuxrocmtpvrwxnrbmfmjhvrulhcaa"
-                            "mauismfqfpeejwfcpvlxuigypwzmlkmqzcvrkiczsbnitxxnvn"
-                            "bpagpirclhaczxrzvlwcapkmvkqhlwsttucgtjxutfkkqvaqca"
-                            "ixnildwefyrrbxbjleiuejtrbvlxgrtuczgbexfcgbiawyyvlt"
-                            "kmgtpizxaczqbwikwluqgvlhvbpcmavmvymkytcaehvblytoxv"
-                            "zzalwagxquetrqevmgnvltjxutfkkatdbrkwkmmkytjhvjjigb"
-                            "ajbxiymlumexmtuqvybrwfenzbrqazxnvtxrbrkslkpxawekiy"
-                            "gwgbqazergptzmgbrzymvgxuxvzvfmjigxvoerhfiagiykzbrp"
-                            "rfmajqgfqfpsxbxhjqtkevyqtgvixrzvlmfmgtfacikckgteii"
-                            "qmgknegudxhlmamslkpxtqtxrxvkbnprkxnvbkgbuxqolavgxu"
-                            "xvnfextmehrrpxkmdvwijrxkmoexwyzdxpqtbhgelipmqbgzrj"
-                            "ecallxkdnhpajbxiyqgejrmakvvvgxuxvgcxayjrmwcyimgaah"
-                            "aqewplifmlkmqzcvrkiizxaczjtwuiqzgvnepeumlazvuijsgz"
-                            "gwitrhrbmgagtfkcttqwvglojjhmsytgowztbmylmmxqhtiaue"
-                            "zkqlrioxprrahfmonmrkcimvgaizrjnjiexgzrwyrzvmlkdqnq"
-                            "jhmejumwyzriigkqgekbnrzvzlgoatokpbhqevmgntqifmetpv"
-                            "yiucbfxzkigecbgxvcymkciftphvzmgiawxxzbacuvnwajmwyn"
-                            "vqijgimrmegsljcuqbvmyzzwgqjrepgjwlqkuxqkdmtlbgaivr"
-                            "bmczahjyljlrqgnxofvlawhehhvmtqqyrgnrvzclfbqvcguwar"
-                            "eiikqgeiaxaqvgdcgfpixvbrnqptprpabloyxauillmzfasxkx"
-                            "apifxwqewplbbuszyxtpbvxwoeiwtiaviuibkyvffmzkmwmcgh"
-                            "jhrvwytbgkczbarprfiyjizcjrepgjwlkmgasjkpnqzrjyoimw"
-                            "qbehrmjmvszvmclfzhltlmlkbmryavmmyimeybvoirpmtqgghw"
-                            "ktckcifasxksxwxukeyvatwjlttxvdbmcfivomimckbgzkiatr"
-                            "qbgfkcttqwflcykmfuifvstjqwcznupedwkcarvyxvjeyqfxhk"
-                            "mqzcvrkivljegauxhnzawcapkmvkqhlwstwodqeyzonxykzhlo"
-                            "rkeakwdcgpbtnvzucnbkizymvmcemslymgpgvbmuwnkyvpxmtc"
-                            "imczvgxnvbaamamyxpbacqaoitkqhlwsuircilmapbtnvzpyaz"
-                            "bwgkbkgjhmijkwogorgixvlttqqdeneqgfqfusubbackbwihim"
-                            "timelpgdmgrmqmlkdqlybgkmhlbbmvorwgpqgebutxnzammzla"
-                            "ejzogmzrwxnzabkxbkxgebvmvgkmhlbbmvnghoeamciqgesvlt"
-                            "pmtkiyjqociawirvuxlbnkcizxaczshvnzuogorgixvbamctal"
-                            "kyiwlwgamtxbhbwjbxnzbmfmibkkemkckvilkiotgvrwexvxnr"
-                            "igbstwwkzmvgkkokxnbvhrgctrqbehrmewmclnnxnfztllztxn"
-                            "vutrqpbettptptrlpakebborwsjxahltrpmytikpwyeggctxbb"
-                            "uxzoxmgczrvmvymksvokigbiujmvglojxbckrmlkrtifioxxiz"
-                            "xaczvgeiyqebzrgwsrotxqaxmtjkbcvgbjotifczvvetumlazv"
-                            "uijkpxtqtxrxvkbnprkeyzuimafbfrvwyrzngwrrbbmvgamyim"
-                            "isbnmmueetqvbmhkjmktmqvlgitxqjnufgxmbqsahatkwaydru"
-                            "vubmgydnkmgebhdbuxgogpxpifxexcgtqpbpibvzaclvwrzgcu"
-                            "jqfalojehpsxtwojsbcvgbvkcgupwxxxnvkbnprketuxnztvll"
-                            "kubacbrvltzyncqamlkkpvcvgnvevdxljrysxvbagagasaxplm"
-                            "urlooctxbkertzrvtjgfmwifcebwpveyzwgytyrfxvidrprvmv"
-                            "ymkgvgaizykxlbhkciigirwtkevyqvqtvwixltxsarweyrktjk"
-                            "heezzwgyqquczymluqflexdgucbjxitrvwrprommvvxpmpbtnv"
-                            "zbqavftrvmgmctaxusmtdqrehizxaczvymzzanqmqbrifvcsvp"
-                            "mmueebrppbtnvzwgaxlxnvkhlnrwixrbxqbnmiyfntkmebggww"
-                            "kcfnftrvclclnuvgjavgxuxvjzadrwvftrvuxlbgaibzoxlmex"
-                            "gogpxplhkmtxbacizxvotigaqibpcrzmfmphrlvlxpiprwsval"
-                            "yorlakimyyzskssjmvpmgtrjkpxsvvhrxvonjieeciiivimqml"
-                            "kzzfcaftkkjbapwhzlulbmfmjtvzymvmvsxhkiimctrthkiaag"
-                            "xckmsrzbjgexpovlnnwamlxvmdcgcavgjmlkiavlkjbxpjynjl"
-                            "twfntrmibzkmmzltrjramfmjtviruxrwnvpujmvmurkiziqusb"
-                            "vhrmztuczgoixeifrzvxhzfzxnivkxnvjkmsrggogpxpkexezz"
-                            "vzrproixeiftqtxrkimvgxuxvoejnrvbfezkmkupnmlkuqwrpr"
-                            "vmvymkuiflxoctostaxvgstxrwpkcvkigytllmymmklizlauis"
-                            "ameroixvdxlbhtprptxbbbmlkfvxrqzxtguiipwitfrpcgzzrt"
-                            "ogstxaqcaix";
-                            */
+    std::string ciphertext;
 
     std::cout << "From: " << std::endl;
     std::cin >> from;
@@ -104,19 +24,18 @@ int main() {
     std::cin >> to;
 
     std::cout << "Ciphertext: " << std::endl;
-    std::string ciphertext;
-    while (!std::cin.eof()) {
-        std::string line;
-        std::getline(std::cin, line);
-        ciphertext += line;
+    std::string line;
+    while (std::getline(std::cin, line)) {
+        if (!line.empty()) {
+            ciphertext += line;
+        }
     }
 
     float max_sd = 0;
     int max_k = 0;
-    std::unordered_map<char, int>* freq_ptr;
+    std::unordered_map<char, int>* freq_ptr = nullptr;
 
     for (int k = from; k <= to; k++) {
-
         std::unordered_map<char, int> frequencies[k];
         float mean[k];
         float variance[k];
@@ -127,7 +46,6 @@ int main() {
             mean[i] = 0;
             variance[i] = 0;
         }
-
         // Count the frequency of each letter for each of the k vectors
         // and sum the total number of letters in each vector
         for (int i = 0; i < ciphertext.size(); i++) {
@@ -152,16 +70,18 @@ int main() {
 
         // Update if neccessary
         if (sd > max_sd) {
+
             max_sd = sd;
             max_k = k;
 
-            delete[] freq_ptr;  // Free the memory allocated for the frequencies no longer needed
+            if (freq_ptr != nullptr) {
+                delete[] freq_ptr;  // Free the memory allocated for the frequencies no longer needed
+            }
             freq_ptr = new std::unordered_map<char, int>[k]; // Allocate memory for the new frequencies (Memory leak ????)
             // Copy the frequencies to the new pointer
             for (int i = 0; i < k; i++) {
                 freq_ptr[i] = frequencies[i];
             }
-
         }
         std::cout << "Key length: " << k << " SD: " << sd << std::endl;
     }
