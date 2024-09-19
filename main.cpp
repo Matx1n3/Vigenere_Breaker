@@ -2,7 +2,7 @@
 #include <unordered_map>
 #include <cmath>
 
-/*
+/*git
  * mod function to handle negative numbers
  * pre: a is an integer, b is an integer
  * post: returns a mod b
@@ -15,6 +15,7 @@ int main() {
 
     int from;
     int to;
+    /*
     std::string ciphertext = "qptqkkwlckhkmzpnkmupkcvkwzpicacgelmfwhzlzfnmfmcksh"
                             "cmfgvnfmrzbtpgybokwilfqbgqujbppqgbrmjiumcgliilzbrg"
                             "phqkwzhkbubwvvzlnmpmmbvigbqgvetsmlsuzxhagxkcbgrigj"
@@ -94,13 +95,21 @@ int main() {
                             "vmvymkuiflxoctostaxvgstxrwpkcvkigytllmymmklizlauis"
                             "ameroixvdxlbhtprptxbbbmlkfvxrqzxtguiipwitfrpcgzzrt"
                             "ogstxaqcaix";
+                            */
 
     std::cout << "From: " << std::endl;
     std::cin >> from;
+
     std::cout << "To: " << std::endl;
     std::cin >> to;
-    //std::cout << "Ciphertext: " << std::endl;
-    //std::cin >> ciphertext;
+
+    std::cout << "Ciphertext: " << std::endl;
+    std::string ciphertext;
+    while (!std::cin.eof()) {
+        std::string line;
+        std::getline(std::cin, line);
+        ciphertext += line;
+    }
 
     float max_sd = 0;
     int max_k = 0;
